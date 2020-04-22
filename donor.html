@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DONOR MEMBERSHIP</title>
+	</head>
+	<body bgcolor="pink" style="font-size: 25px;">
+		<h1 align="center"><center>APPLICATION FORM FOR DONORS</center></h1>
+		<br><br>
+		<form name="donor.html" action="donor.php" method="POST">
+			<pre>
+				FIRST NAME:<input type="text" name="firstname" placeholder="Enter your firstname">
+				<br>
+				LAST NAME:<input type="text" name="lastname" placeholder="Enter your lastname">
+				<br>
+				GENDER:         
+					<input type="radio" name="gender" value="MALE">MALE
+					<input type="radio" name="gender" value="FEMALE">FEMALE
+					<input type="radio" name="gender" value="OTHERS">OTHERS
+				<br>
+				AGE:<input type="number" name="age" placeholder="Enter your age" >
+				<br>
+				E-MAIL ID:<input type="mail" name="mail" placeholder="Enter your mail">
+				<br>
+				ANNUAL INCOME:<select name="income">
+					<option value="Below 10,00,000">Below 10,00,000</option>
+					<option value="10,00,000 to 25,00,000"> 10,00,000 to 25,00,000</option>
+					<option value="Above 25,00,000">Above 25,00,000</option>
+				</select>
+				<br>
+				<label>ADDRESS:</label>
+					<textarea name="address" rows="5" cols="25" placeholder="Enter your address"></textarea>
+				<br>
+				CITY:<select name="city">
+					<option value="Ariyalur">Ariyalur</option>
+					<option value="Chennai"> Chennai</option>
+					<option value="Coimbatore">Coimbatore</option>
+					<option value="Cuddalore">Cuddalore</option>
+					<option value="Dharmapuri"> Dharmapuri</option>
+					<option value="Dindigul">Dindigul</option>
+					<option value="Erode">Erode</option>
+					<option value="Kanchipuram"> Kanchipuram</option>
+					<option value="Kanyakumari">Kanyakumari</option>
+					<option value="Karur">Karur</option>
+					<option value="Krishnagiri"> Krishnagiri</option>
+					<option value="Madurai">Madurai</option>
+					<option value="Nagapattinam">Nagapattinam</option>
+					<option value="Namakkal"> Namakkal</option>
+					<option value="Nilgiris">Nilgiris</option>
+					<option value="Perambalur">Perambalur</option>
+					<option value="Pudukottai"> Pudukottai</option>
+					<option value="Ramanathapuram">Ramanathapuram</option>
+					<option value="Salem">Salem</option>
+					<option value="Sivaganga"> Sivaganga</option>
+					<option value="Thanjavur">Thanjavur</option>
+					<option value="Theni">Theni</option>
+					<option value="Tuticorin"> Tuticorin</option>
+					<option value="Thiruchirapalli">Thiruchirapalli</option>
+					<option value="Thirunelveli">Thirunelveli</option>
+					<option value="Tiruppur"> Tiruppur</option>
+					<option value="Thiruvallur">Thiruvallur</option>
+					<option value="Thiruvannamalai">Thiruvannamalai</option>
+					<option value="Thiruvarur"> Thiruvarur</option>
+					<option value="Vellore">Vellore</option>
+					<option value="Villupuram">Villupuram</option>
+					<option value="Virudhunagar">Virudhunagar</option>
+				</select>
+				<br>
+			        INTERESTED SPORTS FIELD:<input type="checkbox" name="sport" value="football">Football
+			        			<input type="checkbox" name="check[]" value="volleyball">Volleyball
+			        			<input type="checkbox" name="check[]" value="basketball">Basketball
+			        			<input type="checkbox" name="check[]" value="shuttle">Shuttle
+			        			<input type="checkbox" name="check[]" value="cricket">Cricket
+
+			    <br>
+			    	<label>WHICH INSPIRED YOU TO DONATE?</label><br>
+			    	<textarea name="description" rows="5" cols="50" placeholder="Add your description here"></textarea>
+			    <marquee><h3>WE RISE BY LIFTING OTHERS</h3></marquee>
+
+			</pre>
+			<center><input type="submit" name="submit" value="SUBMIT"></center>
+		</form>
+	</body>
+</html>

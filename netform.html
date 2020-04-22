@@ -1,0 +1,53 @@
+<html>
+<head><center><h1 style="background-color:red;"><u>FORM TO CREATE A BANK ACCOUNT</u></h1></head></center>
+<body style="background-color:skyblue">
+	<form name="netform" action="newnetphp.php" method="POST">
+		<h2>NAME:<br>
+			<input type="text" name="name" placeholder="enter name" required="please enter your name"><br><br>
+			ACCOUNT NUMBER:
+			<p>Eg:2060xxxxxx</p><br>
+			<input type="text" name="accno" placeholder="enter account number" required="please enter your accno"><br><br> 
+			FATHER NAME:<br>
+			<input type="text" name="fn" placeholder="enter father"><br><br>
+			DATE OF BIRTH:<br>
+			<input type="date" name="dob"><br><br>
+			GENDER:<br>
+			<input type="radio" name="g" value="MALE">MALE
+			<input type="radio" name="g" value="FEMALE">FEMALE<br><br>
+			BANK:<select name="bank">
+				<option value="SBI">SBI</option>
+				<option value="">INDIAN BANK</option>
+			</select><br><br>
+			USER NAME:<br>
+			<input type="text" name="user" placeholder="enter any username"><br><br>
+			PASSWORD:<br>
+			<input type="password" name="pwd" placeholder="enter minimum 8 characters"><br><br>
+			CONFIRM PASSWORD:<br>
+			<input type="password" name="pwd2" placeholder="enter same password"><br><br>
+			ACCOUNT TYPE:<select name="type">
+				<option>SAVINGS</option>
+				<option>CURRENT</option>
+			</select><br><br>
+			PROOF OF IDENTIFICATION:<br>
+            <h4><input type="checkbox" name="proof[]" value="adhaar card">ADHAAR CARD<br>
+              <input type="checkbox" name="proof[]" value="PAN">PAN CARD<br>
+              <input type="checkbox" name="proof[]" value="ration card">RATION CARD<br>
+              <input type="checkbox" name="proof[]" value="voter ID">VOTER ID<br></h4><br>
+              MARITAL STATUS:<br>
+              <h4><input type="radio" name="ms" value="married">MARRIED
+              <input type="radio" name="ms" value="unmarried">UNMARRIED<br><br></h4>
+              ADDRESS:<br>
+              <textarea rows="5" cols="20" placeholder="enter address" name="address"></textarea><br><br>
+              INCOME:<br>
+              <input type="text" name="income" placeholder="enter income"><br><br>
+              EDUCATIONAL QUALIFICATIONS:<br>
+              <input type="text" name="eq" placeholder="enter qualifications"><br><br>
+              BALANCE:<br>
+              <input type="text" name="bal" placeholder="enter balance">
+              <br><br>
+              DO YOU WANT A CREDIT CARD:<br>
+              <input type="radio" name="c" value="yes">YES
+               <input type="radio" name="c" value="no">NO
+               <br><br>
+               <input type="submit" name="submit" value="SUBMIT"> click here to create your own account
+	</form>
